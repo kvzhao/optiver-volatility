@@ -234,7 +234,7 @@ else:
     train_data_set = pd.read_pickle("train_features_df.pickle")
     print(train_data_set)
 
-if not os.path.exists("train_features_df.pickle"):
+if not os.path.exists("test_features_df.pickle"):
     test_stock_stat_df = get_data_set(test['stock_id'].unique(), dataType = 'test')
     test_data_set = pd.merge(test, test_stock_stat_df, on = ['stock_id', 'time_id'], how = 'left')
     test_data_set.fillna(-999, inplace=True)
