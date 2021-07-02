@@ -1,4 +1,6 @@
 
 *.pyc
+*.pickle
+*.csv
 input
 __pycache__
