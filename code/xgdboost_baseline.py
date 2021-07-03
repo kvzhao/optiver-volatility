@@ -232,7 +232,7 @@ if not os.path.exists("train_features_df.pickle"):
     print(train_data_set.info())
 else:
     train_data_set = pd.read_pickle("train_features_df.pickle")
-    print(train_data_set)
+    print(train_data_set.info())
 
 if not os.path.exists("test_features_df.pickle"):
     test_stock_stat_df = get_data_set(test['stock_id'].unique(), dataType = 'test')
